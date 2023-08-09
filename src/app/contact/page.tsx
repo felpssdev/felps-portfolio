@@ -6,7 +6,7 @@ import React from 'react'
 
 const Contact = () => {
   return (
-    <div className="w-screen h-screen flex flex-col justify-between">
+    <div className="w-screen h-screen flex flex-col justify-between scrollbar scrollbar-none overflow-scroll">
       <Header />
       <ImageWrapper />
       <ContactForm />
