@@ -35,7 +35,7 @@ const EcommerceProjectCard = () => {
         It seamlessly integrates <span className='text-purple-500'>MongoDB</span> for
         database functionality. Users can explore a variety of sneakers,
         with SSR ensuring fast load times. <span className='text-purple-500'>Tailwind CSS</span> ensures consistent
-        styling, while MongoDB stores product data and user information for
+        styling, while <span className='text-purple-500'>MongoDB</span> stores product data and user information for
         an enhanced shopping experience.
       </p>
     </div>
