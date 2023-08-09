@@ -21,12 +21,12 @@ const Portfolio = () => {
           <span className='text-purple-600'>folio</span>
         </div>
         <div className='flex gap-4 items-center'>
-          <div onClick={() => setProject(prev => prev === 1 ? 2 : prev - 1)} className={`${project === 1 ? 'cursor-default' : ''} text-5xl text-white hover:text-purple-600 cursor-pointer transition-all`}>
+          <div onClick={() => setProject(prev => prev === 1 ? 2 : prev - 1)} className={`${project === 1 ? 'cursor-default' : ''} text-2xl md:text-5xl text-white hover:text-purple-600 cursor-pointer transition-all`}>
             <AiOutlineLeft />
           </div>
           {project === 1 && <EcommerceProjectCard />}
           {project === 2 && <EducationProjectCard />}
-          <div onClick={() => setProject(prev => prev === 2 ? 1 : prev + 1)} className={`${project === 2 ? 'cursor-default' : ''} text-5xl text-white hover:text-purple-600 transition-all cursor-pointer`}>
+          <div onClick={() => setProject(prev => prev === 2 ? 1 : prev + 1)} className={`${project === 2 ? 'cursor-default' : ''} text-2xl md:text-5xl text-white hover:text-purple-600 transition-all cursor-pointer`}>
             <AiOutlineRight />
           </div>
         </div>

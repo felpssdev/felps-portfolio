@@ -7,20 +7,20 @@ import Image from 'next/image'
 
 const EcommerceProjectCard = () => {
   return (
-    <div className='h-[600px] w-[390px] md:h-[530px] md:w-[590px] relative flex flex-col justify-between items-center py-4 p-10 transition-all box-border'>
+    <div className='h-[610px] w-[275px] md:h-[530px] md:w-[590px] relative flex flex-col justify-between items-center py-4 p-10 transition-all box-border'>
       <div className='flex text-2xl text-white font-bold'>
         <span>Shoe</span>
         <span className='text-purple-600'>Store</span>
       </div>
-      <div className='absolute top-16 left-8 md:left-12'>
+      <div className='absolute top-16 left-6 md:left-12'>
         <div>
           <Image width={420} src={NotebookImage} alt='Notebook with Project Screen' />
         </div>
-        <div className='absolute top-2 right-9 w-72 md:h-fit md:w-fit z-10 md:top-3 md:right-7 rounded overflow-hidden'>
+        <div className='absolute top-1 right-[17px] w-[225px] md:h-fit md:w-fit z-10 md:top-3 md:right-7 rounded overflow-hidden'>
           <Image width={355} src={EcommerceWeb} alt='Project Screen' />
         </div>
       </div>
-      <div className='absolute top-32 -right-4 z-20'>
+      <div className='absolute top-32 -right-12 md:top-32 md:-right-4 z-20'>
         <div className='z-30 w-36 md:w-fit'>
           <Image width={235} src={PhoneImage} alt='Phone with Project Screen' />
         </div>
@@ -28,7 +28,7 @@ const EcommerceProjectCard = () => {
           <Image width={100} src={MobileEcommerce} alt='Project Screen mobile' />
         </div>
       </div>
-      <p className='text-white font-semibold text-justify text-base'>
+      <p className='text-white font-semibold text-justify text-sm md:text-base'>
         This project is a responsive sneaker store built with
         <span className='text-purple-500'> TypeScript,
           Next.js, and Tailwind CSS</span>.
