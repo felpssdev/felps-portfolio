@@ -114,7 +114,7 @@ const TechSection = () => {
         </div>
       </div>
 
-      <div className='flex flex-col gap-2 items-center self-center font-bold text-white text-xl h-fit xl:h-[328px] py-6 px-6 bg-white/10 w-[80%] border-4 border-black hover:border-purple-500 hover:bg-white/20 transition-colors rounded-xl mt-6 mb-6'>
+      <div className='flex flex-col gap-2 items-center self-center font-bold text-white text-xl h-fit xl:h-[552px] 1402px:h-[326px] 2xl:h-[328px] py-6 px-6 bg-white/10 w-[80%] border-4 border-black hover:border-purple-500 hover:bg-white/20 transition-colors rounded-xl mt-6 mb-6'>
         <div className='self-center pb-6 text-2xl flex'>
           <span>Dev</span>
           <span className='text-purple-600'>Ops</span>
