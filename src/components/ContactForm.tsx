@@ -19,7 +19,7 @@ const ContactForm = () => {
     resolver: zodResolver(schema),
     reValidateMode: 'onSubmit'
   })
-  const [showNotification, setShowNotification] = useState<boolean>(true)
+  const [showNotification, setShowNotification] = useState<boolean>(false)
 
   const handleForm = (data: FormProps) => {
     const { name, email, message } = data
