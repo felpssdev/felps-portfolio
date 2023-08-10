@@ -19,7 +19,7 @@ const ContactForm = () => {
     resolver: zodResolver(schema),
     reValidateMode: 'onSubmit'
   })
-  const [showNotification, setShowNotification] = useState<boolean>(false)
+  const [showNotification, setShowNotification] = useState<boolean>(true)
 
   const handleForm = (data: FormProps) => {
     const { name, email, message } = data
@@ -87,7 +87,7 @@ const ContactForm = () => {
           render={({ field }) => (
             <div className='relative'>
               <textarea {...register('message')} id='message' className='h-40 py-4 w-full px-3 rounded-lg box-border border-2 border-gray-800 focus:outline-none bg-white/50 focus:border-purple-500 transition-colors peer' autoComplete='off' required />
-              <label htmlFor="message" className={`${field.value.trim() ? 'text-xs text-gray-400 top-1' : ''} absolute text-8m font-semibold text-gray-800 left-3 top-4 cursor-text peer-focus:text-xs peer-focus:top-1 peer-focus:text-gray-600 transition-all`}>Write your message</label>
+              <label htmlFor="message" className={`${field.value.trim() ? 'hidden' : ''} absolute text-8m font-semibold text-gray-800 left-3 top-4 cursor-text peer-focus:text-xs peer-focus:top-1 peer-focus:text-gray-600 transition-all`}>Write your message</label>
             </div>
           )}
         />

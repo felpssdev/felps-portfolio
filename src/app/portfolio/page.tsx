@@ -30,7 +30,7 @@ const Portfolio = () => {
             <AiOutlineRight />
           </div>
         </div>
-        <div className='flex gap-2'>
+        <div className='flex gap-2 py-6'>
           <Dot className={`${project === 1 ? 'text-white' : 'text-gray-500'} transition-all w-10 h-10`} />
           <Dot className={`${project === 2 ? 'text-white' : 'text-gray-500'} transition-all w-10 h-10`} />
         </div>

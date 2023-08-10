@@ -3,7 +3,7 @@ import React from 'react'
 
 const EmailSent = () => {
   return (
-    <div className='z-10 absolute bottom-32 2xl:bottom-44 self-center h-20 w-80 bg-white/50 border-2 rounded-xl overflow-hidden flex flex-col items-center border-gray-500'>
+    <div className='z-10 absolute bottom-32 2xl:bottom-44 self-center h-20 w-80 bg-zinc-400 border-2 rounded-xl overflow-hidden flex flex-col items-center border-purple-800'>
       <div className='flex w-full gap-4 h-full px-4 items-center'>
         <CheckCircle className='text-purple-800' />
         <div>
