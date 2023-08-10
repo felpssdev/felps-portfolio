@@ -37,11 +37,12 @@ const ContactForm = () => {
 
       setTimeout(() => {
         setShowNotification(false)
-      }, 5000)
+      }, 4200)
     } catch (err) {
       console.log(err)
     }
   }
+
 
   return (
     <div className='z-10 self-center text-md h-full w-full bg-white/10 flex flex-col px-16 pb-10'>
