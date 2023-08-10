@@ -18,6 +18,15 @@ module.exports = {
       boxShadow: {
         'top': '0 -10px 15px -3px rgba(0, 0, 0, 0.2), 0 -4px 6px -2px rgba(0, 0, 0, 0.05)',
       },
+      keyframes: {
+        'decreaseAnimation': {
+          '0%': { width: '100%', transform: 'translateX(0)' },
+          '100%': { width: '0%', transform: 'translateX(-300%)' }
+        }
+      },
+      animation: {
+        'decrease': 'decreaseAnimation 7s linear'
+      }
     },
   },
   plugins: [

@@ -1,9 +1,10 @@
 'use client'
-import React from 'react'
+import React, { useEffect, useState } from 'react'
 import { useForm, Controller } from 'react-hook-form'
 import { z } from 'zod'
 import { zodResolver } from '@hookform/resolvers/zod'
 import { sendEmail } from '@/services/sendEmail'
+import EmailSent from './EmailSent'
 
 const schema = z.object({
   name: z.string().min(2, 'Digite um nome válido!'),
@@ -18,6 +19,7 @@ const ContactForm = () => {
     resolver: zodResolver(schema),
     reValidateMode: 'onSubmit'
   })
+  const [showNotification, setShowNotification] = useState<boolean>(false)
 
   const handleForm = (data: FormProps) => {
     const { name, email, message } = data
@@ -31,6 +33,11 @@ const ContactForm = () => {
     try {
       sendEmail(emailContent)
       reset()
+      setShowNotification(true)
+
+      setTimeout(() => {
+        setShowNotification(false)
+      }, 5000)
     } catch (err) {
       console.log(err)
     }
@@ -85,6 +92,7 @@ const ContactForm = () => {
         />
         <button type='submit' className='px-6 py-2 w-fit self-center bg-purple-500 hover:bg-purple-700 transition-colors text-white font-bold rounded-2xl'>Submit</button>
       </form>
+      {showNotification && <EmailSent />}
     </div>
   )
 }
