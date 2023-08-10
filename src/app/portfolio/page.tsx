@@ -15,7 +15,7 @@ const Portfolio = () => {
     <div className="w-screen h-screen flex flex-col justify-between z-10 scrollbar scrollbar-none overflow-scroll">
       <Header />
       <ImageWrapper />
-      <div className='z-10 h-full w-full bg-white/10 flex flex-col text-3xl items-center'>
+      <div className='z-10 h-full w-full py-6 bg-white/10 flex flex-col text-3xl items-center'>
         <div className='flex text-white font-bold pt-10 pb-4'>
           <span>Port</span>
           <span className='text-purple-600'>folio</span>

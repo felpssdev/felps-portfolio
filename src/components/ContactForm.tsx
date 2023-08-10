@@ -37,7 +37,7 @@ const ContactForm = () => {
   }
 
   return (
-    <div className='z-10 self-center text-md h-full w-full bg-white/10 flex flex-col px-16'>
+    <div className='z-10 self-center text-md h-full w-full bg-white/10 flex flex-col px-16 py-10'>
       <div className='text-white self-center font-bold pt-10'>
         <span>{"Let's"}</span>
         <span className='text-purple-500 ml-1'>talk</span>
